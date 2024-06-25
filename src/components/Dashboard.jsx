@@ -15,7 +15,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       try {
-        const res = await axios.get('https://mybackend.teamcity.com/build/7/api/workouts', {
+        const res = await axios.get('https://workouttracker-backend-vvkf.onrender.com/api/workouts', {
           headers: { 'x-auth-token': localStorage.getItem('token') },
         });
         setWorkouts(res.data);
@@ -37,7 +37,7 @@ const Dashboard = () => {
     const newWorkout = { type, duration, distance, calories, notes };
 
     try {
-      const res = await axios.post('https://mybackend.teamcity.com/build/7/api/workouts', newWorkout, {
+      const res = await axios.post('https://workouttracker-backend-vvkf.onrender.com/api/workouts', newWorkout, {
         headers: { 'x-auth-token': localStorage.getItem('token') },
       });
       setWorkouts([res.data, ...workouts]);
@@ -147,7 +147,7 @@ const Dashboard = () => {
                 <button
                   onClick={async () => {
                     try {
-                      await axios.delete(`https://mybackend.teamcity.com/build/7/api/workouts/${workout._id}`, {
+                      await axios.delete(`https://workouttracker-backend-vvkf.onrender.com/api/workouts/${workout._id}`, {
                         headers: { 'x-auth-token': localStorage.getItem('token') },
                       });
                       setWorkouts(workouts.filter((w) => w._id !== workout._id));
