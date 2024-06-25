@@ -19,7 +19,7 @@ const Register = () => {
       navigate('/Login');
     } catch (err) {
       console.error(err.response.data);
-      alert('falhar ao cadrastrar')
+      alert('tente outro nome de usuário')
     }
   };
 

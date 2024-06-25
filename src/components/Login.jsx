@@ -17,6 +17,7 @@ const Login = () => {
       localStorage.setItem('username', res.data.username);
       navigate('/Dashboard');
     } catch (err) {
+     
       console.error(err.response.data);
       alert('falhar ao entrar')
     }
