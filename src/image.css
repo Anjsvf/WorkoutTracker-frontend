@@ -1,39 +1,23 @@
 /* Estilos gerais do corpo */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  
-  }
-  
+
   /* Contêiner de fundo */
   .background-container {
-    min-height: 100vh; /* Garante que o contêiner tenha pelo menos a altura da tela */
+    /* min-height: 100vh; Garante que o contêiner tenha pelo menos a altura da tela */
     background: url("./assets/trackbg.png") no-repeat center center fixed;
     background-size: cover; /* Faz a imagem cobrir todo o contêiner */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem; /* Padding de 4 unidades */
+    /* Faz a imagem cobrir todo o contêiner */
+  background-position: center center; /* Centraliza a imagem */
+  padding: 1rem; /* Padding de 4 unidades */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
   
   /* Conteúdo dentro do contêiner */
   .content {
-    color: rgb(109, 51, 51); /* Exemplo de conteúdo */
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para o conteúdo */
-    padding: 2rem; /* Espaçamento interno */
-    border-radius: 8px; /* Cantos arredondados */
+   text-align: center;
+   padding: 0;
   }
   
-  /* Ajuste para preencher toda a tela no desktop */
-  @media (min-width: 768px) {
-    .content {
-      width: 100%; /* Preenche 100% da largura da tela */
-      max-width: 100%; /* Remove a restrição de largura máxima */
-      margin: 0 2rem; /* Margem para evitar que o formulário encoste nas bordas */
-    }
-  }
+  
   
