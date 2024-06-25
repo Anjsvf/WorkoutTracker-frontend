@@ -53,12 +53,12 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="p-8   bg-slate-900">
-        <h2 className="text-2xl text-white mb-6">olá,{username}</h2>
-      <h2 className="text-2xl mb-6  text-white">Painel</h2>
+    <div className=" bg-slate-900">
+        <h2 className="text-2xl text-white mb-6">olá, {username}</h2>
+      <h2 className="text-2xl mb-6  text-white"> Seu Painel de monitoramento físico</h2>
       <form onSubmit={onSubmit} className="bg-slate-800 p-6 rounded shadow-md mb-6">
         <div className="mb-4">
-          <label className="block text-white">Type</label>
+          <label className="block text-white">Tipo</label>
           <input
             type="text"
             className="w-full px-3 py-2 border rounded"
@@ -68,7 +68,7 @@ const Dashboard = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-white">Duration (minutes)</label>
+          <label className="block text-white">Duração (minutos)</label>
           <input
             type="number"
             className="w-full px-3 py-2 border rounded"
@@ -78,7 +78,7 @@ const Dashboard = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-white">Distance (km)</label>
+          <label className="block text-white">Distância(km)</label>
           <input
             type="number"
             className="w-full px-3 py-2 border rounded"
@@ -87,7 +87,7 @@ const Dashboard = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-white">Calories</label>
+          <label className="block text-white">Calorias</label>
           <input
             type="number"
             className="w-full px-3 py-2 border rounded"
@@ -96,7 +96,7 @@ const Dashboard = () => {
           />
         </div>
         <div className="mb-6">
-          <label className="block text-white">Notes</label>
+          <label className="block text-white">observação</label>
           <textarea
             className="w-full px-3 py-2 border rounded"
             value={notes}
@@ -127,21 +127,21 @@ const Dashboard = () => {
                   <strong>Type:</strong> {workout.type}
                 </div>
                 <div>
-                  <strong>Duration:</strong> {workout.duration} minutes
+                  <strong>Duração:</strong> {workout.duration} minutos
                 </div>
                 {workout.distance && (
                   <div>
-                    <strong>Distance:</strong> {workout.distance} km
+                    <strong>Distância:</strong> {workout.distance} km
                   </div>
                 )}
                 {workout.calories && (
                   <div>
-                    <strong>Calories:</strong> {workout.calories}
+                    <strong>Calorias:</strong> {workout.calories}
                   </div>
                 )}
                 {workout.notes && (
                   <div>
-                    <strong>Notes:</strong> {workout.notes}
+                    <strong>observação:</strong> {workout.notes}
                   </div>
                 )}
                 <button
@@ -157,7 +157,7 @@ const Dashboard = () => {
                   }}
                   className="mt-2 bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600"
                 >
-                  Delete
+                  Apagar
                 </button>
               </li>
             ))}
