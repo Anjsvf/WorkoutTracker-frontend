@@ -14,7 +14,7 @@ const Register = () => {
     const newUser = { username, email, password };
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', newUser);
+      const res = await axios.post('https://mybackend.teamcity.com/build/7/api/auth/register', newUser);
       localStorage.setItem('token', res.data.token);
       navigate('/Login');
     } catch (err) {
