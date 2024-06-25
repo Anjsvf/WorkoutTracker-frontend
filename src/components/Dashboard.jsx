@@ -53,7 +53,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className=" bg-slate-900">
+    <div className=" p-8">
         <h2 className="text-2xl text-white mb-6">olá, {username}</h2>
       <h2 className="text-2xl mb-6  text-white"> Seu Painel de monitoramento físico</h2>
       <form onSubmit={onSubmit} className="bg-slate-800 p-6 rounded shadow-md mb-6">

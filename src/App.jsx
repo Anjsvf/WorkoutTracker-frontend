@@ -8,7 +8,7 @@ import './App.css'
 //
 const App = () => (
   <div className='background-container'>
-    <div className="content">
+    <div className="min-h-screen p-4">
       <Routes>
       <Route path="/" element={<Register />} />
         <Route path="/Login" element={<Login />} />
