@@ -124,7 +124,7 @@ const Dashboard = () => {
             {Array.isArray(workouts) && workouts.map((workout) => (
               <li key={workout._id} className="mb-4 p-4 text-white bg-slate-800 rounded shadow">
                 <div>
-                  <strong>Type:</strong> {workout.type}
+                  <strong>Tipo:</strong> {workout.type}
                 </div>
                 <div>
                   <strong>Duração:</strong> {workout.duration} minutos

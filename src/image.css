@@ -1,23 +1,20 @@
 /* Estilos gerais do corpo */
 
-  /* Contêiner de fundo */
-  .background-container {
-    /* min-height: 100vh; Garante que o contêiner tenha pelo menos a altura da tela */
-    background: url("./assets/trackbg.png") no-repeat center center fixed;
-    background-size: cover; /* Faz a imagem cobrir todo o contêiner */
-    /* Faz a imagem cobrir todo o contêiner */
+/* Contêiner de fundo */
+.background-container {
+  /* min-height: 100vh; Garante que o contêiner tenha pelo menos a altura da tela */
+  background: url("./assets/trackbg.png") no-repeat center center fixed;
+  background-size: cover; /* Faz a imagem cobrir todo o contêiner */
+  /* Faz a imagem cobrir todo o contêiner */
   background-position: center center; /* Centraliza a imagem */
   padding: 1rem; /* Padding de 4 unidades */
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
-  }
-  
-  /* Conteúdo dentro do contêiner */
-  .content {
-   text-align: center;
-   padding: 0;
-  }
-  
-  
-  
+}
+
+/* Conteúdo dentro do contêiner */
+.content {
+  text-align: center;
+  padding: 0;
+}
